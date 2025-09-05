@@ -1,6 +1,6 @@
-> __MPU6050dmp20.py__ : micropython driver for MPU6050 Digital Motion Processor 2.0 (python transcription of Jeff Rowberg driver)
+> __MPU6050dmp20.py__ : micropython driver for MPU6050 Digital Motion Processor 2.0 (python transcription of Jeff Rowberg C driver)
 >
-> For ESP01, the module is too large and it must be compiled with the firmware
+> For ESP01, the driver is too large and it must be compiled with the firmware
 > 
 > __firmware-combined.bin__ : micropython firmware including MPU6050dmp20 for ESP01/ESP8266
 
