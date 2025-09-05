@@ -29,3 +29,11 @@ You can now initialize the sensor with the correct values :
 >>> mpu.setDMPEnabled(True)
 >>> mpu.getIntStatus()
 ```
+
+## Extracting data
+
+_displayData.py_ read and display data after dmp initialization :
+
+```python
+>>> import displayData
+```
