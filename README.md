@@ -12,3 +12,20 @@
 >>> i2c = SoftI2C(scl=Pin(3),sda=Pin(4),freq=400_000) # replace pin numbers with adequate
 >>> mpu = MPU6050dmp(i2c)
 ```
+
+First, measure accelerometer and gyro offsets. Lay the sensor horizontally with z-axis pointing upward, then :
+
+```python
+>>> mpu.calibrate()
+```
+
+and wait till the offsets stabilize, or issue CTRL-C if one (more often gyro) oscillate. 
+
+You can now initialize the sensor with the correct values :
+
+```python
+>>> mpu = MPU6050dmp(i2c,axOff=-58,ayOff=-791,azOff=877,gxOff=84,gyOff=47,gzOff=31) 
+>>> mpu.dmpInitialize()
+>>> mpu.setDMPEnabled(True)
+>>> mpu.getIntStatus()
+```
