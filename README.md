@@ -19,7 +19,7 @@ First, measure accelerometer and gyro offsets. Lay the sensor horizontally with 
 >>> mpu.calibrate()
 ```
 
-and wait till the offsets stabilize, or issue CTRL-C if one (more often gyro) oscillate. 
+and wait untill the offsets stabilize, or issue CTRL-C if one (more often gyro) oscillate. 
 
 You can now initialize the sensor with the correct values :
 
