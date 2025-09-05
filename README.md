@@ -6,9 +6,9 @@
 
 ## How to use
 
-'''python
+```python
 >>> from machine import Pin, SoftI2C
 >>> from MPU6050dmp20 import MPU6050dmp
 >>> i2c = SoftI2C(scl=Pin(3),sda=Pin(4),freq=400_000) # replace pin numbers with adequate
 >>> mpu = MPU6050dmp(i2c)
-'''
+```
